@@ -1,0 +1,34 @@
+body{
+    background-color: #faf9f6;
+}
+
+header{
+    margin-bottom: 100px;
+    background-color: green;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    color: #faf9f6;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+border: solid 2px #faf9f6;
+border-radius: 15px;
+padding: 5px;
+}
+
+footer{
+    margin-top: 100px;
+    background-color: green;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}

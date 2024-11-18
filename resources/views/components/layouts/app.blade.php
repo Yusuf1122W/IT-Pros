@@ -6,13 +6,13 @@
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>School Football App</h1>
         <nav>
             <x-navbar/>
         </nav>
     </header>
     <main>
-
+        {{ $slot }}
     </main>
     <footer>
         <x-footer/>

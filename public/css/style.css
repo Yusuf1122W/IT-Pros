@@ -8,12 +8,13 @@ body{
 }
 
 header{
-    background-color: rgba(255, 255, 255, 0.537);
-    padding-top: 10px;
+    background-image: url('../img/BallFootball3.png');
+    padding-bottom: 30px;
 }
 
 p{
     text-align: center;
+    font-size: 25px;
 }
 
 header h1{
@@ -27,21 +28,30 @@ nav{
 }
 
 nav a{
-    color:blue;
-    background-color: #faf9f6;
+    color:rgba(255, 255, 255, 0.663);
+    background-color: black;
     font-size: 20px;
+    border-radius: 25px;
     text-decoration: none;
+    padding: 5px;
 }
+
+
 
 nav a:hover{
 transition: 1s all;
 
-color: #cecdcc;
+color: #ffffff;
 
 }
 
 footer{
-    background-image: url(../img/header_background.png);
+    background-image: url('../img/BallFootball3.png');
+    position: absolute;
+    opacity: 55%;
+    width: 1550px;
+    height: 125px;
+
     padding-top: 10px;
     padding-bottom: 35px;
 }
@@ -50,7 +60,17 @@ p{
     color: white;
 }
 
+main{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
 footer p{
     color: white;
     text-align: center;
+    opacity: 100%;
+}
+
+footer{
+    margin-top: 150px;
 }

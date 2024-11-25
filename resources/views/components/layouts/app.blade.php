@@ -8,7 +8,9 @@
     <header>
 
         <h1>School Football App</h1>
-        <img src="url{{ asset('img/SFA Logo.png') }}" alt="">
+        <img src="{{ asset('img/SFA-Logo.png') }}" class="SFA" alt="">
+        <a href="{{ route('dashboard') }}">login</a>
+
         <nav>
             <x-navbar/>
         </nav>

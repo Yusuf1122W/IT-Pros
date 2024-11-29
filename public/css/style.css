@@ -80,3 +80,7 @@ img, .SFA {
     height: 15%;
 
 }
+.login {
+    display: flex;
+    justify-content: flex-end;
+}

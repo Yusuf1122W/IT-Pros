@@ -45,6 +45,51 @@ color: #ffffff;
 
 }
 
+table{
+    color: blue;
+    background-color: #00ffff;
+    text-align: center;
+}
+
+.form-group{
+    color: blue;
+    background-color: #00ffff;
+    margin-right: 200px;
+}
+
+td{
+    padding-left: 10px;
+    justify-content: center;
+    display: flexbox;
+}
+
+th{padding-left: 10px;}
+
+.TC{
+    margin-left: 630px;
+    padding-bottom: 5px;
+}
+
+.CL{
+    padding-bottom: 10px;
+}
+
+.CL a{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border: white 1px solid;
+    border-radius: 20px;
+}
+
+.CL a:hover{
+    transition: 0.2s;
+    color: #00ffff;
+    background-color: white;
+    border: #00ffff 1px solid;
+}
+
 footer{
     background-image: url('../img/BallFootball3.png');
     position: absolute;

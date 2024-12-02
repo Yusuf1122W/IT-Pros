@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PlayerController;
+use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,8 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('homepage.index');
 
-Route::get('/teampage', [PagesController::class], "index")->name('team');
-
-
+Route::get('/teams', [TeamController::class, 'index'])->name('teams.index');
+Route::get('/teams/create', [TeamController::class, 'create'])->name('teams.create');
+Route::post('/teams/create', [TeamController::class, 'store'])->name('teams.store');
+Route::get('/teams/edit/{team}', [TeamController::class, 'edit'])->name('teams.edit');
+Route::post('/teams/edit/{team}', [TeamController::class, 'update'])->name('teams.update');
+Route::delete('/teams/delete/{team}', [TeamController::class, 'destroy'])->name('teams.destroy');

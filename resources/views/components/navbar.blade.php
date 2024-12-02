@@ -1,4 +1,5 @@
-<a href="">link1</a>
-<a href="">link2</a>
-<a href="">link3</a>
-<a href="">link4</a>
+
+<a href="{{ route('homepage.index') }}">home</a>
+<a href="{{ route('teams.index') }}">Teams</a>
+
+

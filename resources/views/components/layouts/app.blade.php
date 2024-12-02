@@ -6,11 +6,12 @@
 </head>
 <body>
     <header>
-
-        <h1>School Football App</h1>
-        <img src="{{ asset('img/SFA-Logo.png') }}" class="SFA" alt="">
+    <div class="school">
         <a href="{{ route('login') }}" class="login">Login</a>
+        <h1>School Football App</h1>
         <a href="{{ route('register') }}" class="register">Register</a>
+    </div>
+        <img src="{{ asset('img/SFA-Logo.png') }}" class="SFA" alt="">
 
         <nav>
             <x-navbar/>

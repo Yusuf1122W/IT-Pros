@@ -150,10 +150,14 @@ img, .SFA {
     padding: 6px;
     transition: 1s;
     text-decoration: none;
-    position: fixed;
+
 }
 .login:hover {
     color: black;
     padding: 10px;
     transition: 1s;
+}
+div, .school {
+    display: flex;
+    justify-content: space-between;
 }

@@ -9,8 +9,8 @@
 
         <h1>School Football App</h1>
         <img src="{{ asset('img/SFA-Logo.png') }}" class="SFA" alt="">
-        <a href="{{ route('login') }}" class="login">login</a>
-        <a href="{{ route('register') }}" >Register</a>
+        <a href="{{ route('login') }}" class="login">Login</a>
+        <a href="{{ route('register') }}" class="register">Register</a>
 
         <nav>
             <x-navbar/>

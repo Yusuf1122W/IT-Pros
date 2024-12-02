@@ -34,6 +34,7 @@ nav a{
     border-radius: 25px;
     text-decoration: none;
     padding: 5px;
+    transition: 1s all;
 }
 
 
@@ -83,4 +84,31 @@ img, .SFA {
 .login {
     display: flex;
     justify-content: flex-end;
+}
+.register {
+    color: #ffffff;
+    background-color: rgba(236, 236, 238, 0.384);
+    border-radius: 7px;
+    padding: 6px;
+    transition: 1s;
+    text-decoration: none;
+}
+.register:hover {
+    color: black;
+    padding: 10px;
+    transition: 1s;
+}
+.login {
+    color: #ffffff;
+    background-color: rgba(236, 236, 238, 0.384);
+    border-radius: 7px;
+    padding: 6px;
+    transition: 1s;
+    text-decoration: none;
+    position: fixed;
+}
+.login:hover {
+    color: black;
+    padding: 10px;
+    transition: 1s;
 }

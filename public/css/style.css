@@ -71,8 +71,9 @@ th{padding-left: 10px;}
     padding-bottom: 5px;
 }
 
-.CL{
-    padding-bottom: 10px;
+table{
+    margin-right: 630px;
+    left: 100px;
 }
 
 .CL a{
@@ -82,6 +83,11 @@ th{padding-left: 10px;}
     color: white;
     border: white 1px solid;
     border-radius: 20px;
+}
+
+.CL{
+    margin-left: 630px;
+    margin-bottom: 25px;
 }
 
 .CL a:hover{

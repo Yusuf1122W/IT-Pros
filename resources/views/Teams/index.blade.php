@@ -1,5 +1,9 @@
 <x-layouts.app>
 
+    <div class="CL">
+        <a href="{{ route('teams.create') }}">Add team</a>
+    </div>
+
     <div class="TC">
     <table>
         <thead>
@@ -27,9 +31,6 @@
                     </td>
                 </tr>
             @endforeach
-            <div class="CL">
-                <a href="{{ route('teams.create') }}">Add team</a>
-            </div>
         </tbody>
     </table>
 </div>

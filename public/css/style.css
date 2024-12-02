@@ -82,6 +82,7 @@ th{padding-left: 10px;}
     color: white;
     border: white 1px solid;
     border-radius: 20px;
+    transition: 1s;
 }
 
 .CL a:hover{
@@ -89,6 +90,7 @@ th{padding-left: 10px;}
     color: #00ffff;
     background-color: white;
     border: #00ffff 1px solid;
+    transition: 1s;
 }
 
 footer{

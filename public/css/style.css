@@ -83,6 +83,7 @@ table{
     color: white;
     border: white 1px solid;
     border-radius: 20px;
+    transition: 1s;
 }
 
 .CL{
@@ -95,6 +96,7 @@ table{
     color: #00ffff;
     background-color: white;
     border: #00ffff 1px solid;
+    transition: 1s;
 }
 
 footer{

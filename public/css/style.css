@@ -92,7 +92,6 @@ table{
 }
 
 .CL a:hover{
-    transition: 0.2s;
     color: #00ffff;
     background-color: white;
     border: #00ffff 1px solid;

@@ -20,6 +20,14 @@ Route::get('/', function () {
     return view('home');
 })->name('homepage.index');
 
+
+Route::get('/users', [PlayerController::class, 'index'])->name('users.index');
+Route::get('/users/create', [PlayerController::class, 'create'])->name('users.create');
+Route::post('/users/create', [PlayerController::class, 'store'])->name('users.store');
+Route::get('/users/edit/{user}', [PlayerController::class, 'edit'])->name('users.edit');
+Route::post('/users/edit/{user}', [PlayerController::class, 'update'])->name('users.update');
+Route::delete('/users/delete/{user}', [PlayerController::class, 'destroy'])->name('users.destroy');
+
 Route::get('/teams', [TeamController::class, 'index'])->name('teams.index');
 Route::get('/teams/create', [TeamController::class, 'create'])->name('teams.create');
 Route::post('/teams/create', [TeamController::class, 'store'])->name('teams.store');

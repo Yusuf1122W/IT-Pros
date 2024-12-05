@@ -51,6 +51,12 @@ nav a {
     padding: 10px 20px;
     transition: 0.3s ease;
 }
+.nav-links {
+    padding-bottom: 30px; /* Space between links and line */
+    border-bottom: 2px solid #ffffff; /* White dividing line */
+    width: 80%; /* Adjust width of the line */
+    margin: 0 auto; /* Center the line on the page */
+}
 
 nav a:hover {
     color: #fff;
@@ -190,4 +196,40 @@ div.school {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+/* Styling voor Edit en Delete knoppen */
+.button-edit, .button-delete {
+    padding: 8px 15px; /* Ruimte in de knop */
+    font-size: 0.9rem; /* Tekstformaat */
+    border: none; /* Verwijder standaard randen */
+    border-radius: 20px; /* Ronde hoeken */
+    cursor: pointer; /* Handcursor bij hover */
+    transition: 0.3s ease; /* Soepele overgangseffecten */
+}
+
+/* Specifieke stijl voor Edit knop */
+.button-edit {
+    background-color: #00ffff; /* Cyan kleur */
+    color: #000; /* Zwarte tekst */
+    text-decoration: none;
+}
+
+.button-edit:hover {
+    background-color: #ffffff; /* Witte achtergrond bij hover */
+    color: #00ffff; /* Cyan tekst */
+    border: 1px solid #00ffff; /* Dunne cyan rand */
+}
+
+/* Specifieke stijl voor Delete knop */
+.button-delete {
+    background-color: #ff4d4d; /* Rode achtergrond */
+    color: #fff; /* Witte tekst */
+    transition: 1s;
+    margin-top: 10px;
+}
+
+.button-delete:hover {
+    background-color: cyan;
+    color: #fff;
+    transition: 1s;
 }

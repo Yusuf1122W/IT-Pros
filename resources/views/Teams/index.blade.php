@@ -22,11 +22,11 @@
                     <td>{{$team->school}}</td>
                     <td></td>
                     <td>
-                        <a href="{{ route('teams.edit', $team->id) }}">Edit</a>
+                        <a href="{{ route('teams.edit', $team->id) }}" class="button-edit">Edit</a>
                         <form action="{{ route('teams.destroy', $team->id) }}" method="post">
                             @csrf
                             @method("DELETE")
-                            <input type="submit" value="Delete">
+                            <input type="submit" value="Delete" class="button-delete">
                         </form>
                     </td>
                 </tr>

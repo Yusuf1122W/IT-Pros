@@ -18,7 +18,7 @@
             @foreach ($teams as $team)
                 <tr>
                     <td>{{ $team->id }}</td>
-                    <td><a href="{{ route('players.index', ['teamId' => $team->id]) }}">{{ $team->name }}</a></td>
+                    <td><a href="{{ route('teams.index', ['teamId' => $team->id]) }}">{{ $team->name }}</a></td>
                     <td>{{$team->school}}</td>
                     <td></td>
                     <td>

@@ -14,8 +14,7 @@ return new class extends Migration
         Schema::create('teams', function (Blueprint $table) {
             $table->id(); // Primary key
             $table->string('name'); // Team name
-            $table->string('school'); // Associated school
-            $table->string('players');
+            $table->json('players')->nullable()->default(null);
             $table->timestamps(); // Created_at and updated_at columns
         });
     }

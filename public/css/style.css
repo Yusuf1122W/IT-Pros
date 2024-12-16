@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+.name{
+    display: inline;
+    padding: 5px;
+    border: double white 3px;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-image: url('../img/Football_background.png'); /* Full-page background */
@@ -24,12 +30,45 @@ header {
     height: 250px; /* Adjust header height */
     text-align: center;
     padding: 20px 0; /* Add padding for spacing */
+    opacity: 80%;
+}
+
+.logout input{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.logout input:hover{
+    color: black;
+    background-color: #00ffff;
+    padding: 15px 20px;
+}
+
+/* Buttons for login/register */
+.login, .register {
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    padding: 8px 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.login:hover, .register:hover {
+    color: black;
+    background-color: #00ffff;
+    padding: 10px 20px;
 }
 
 header h1 {
     color: #faf9f6;
     font-size: 2.5rem;
-    margin-top: 20px;
+    margin-top: 5px;
     z-index: 2;
     position: relative; /* Ensure proper layering */
 }
@@ -173,6 +212,10 @@ img, .SFA {
     z-index: 2; /* Ensure it's above the background */
 }
 
+img{
+    width: 125px;
+}
+
 /* Buttons for login/register */
 .login, .register {
     display: inline-block;
@@ -193,7 +236,7 @@ img, .SFA {
 /* School info section */
 div.school {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     align-items: center;
     padding: 10px 20px;
 }

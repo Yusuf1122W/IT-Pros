@@ -22,7 +22,6 @@ class TeamController extends Controller
     public function store(Request $request) {
         $newTeam = new Team;
         $newTeam->name = $request->name;
-        $newTeam->school = $request->school;
         $newTeam->save();
 
         return redirect()->route('teams.index');
@@ -38,7 +37,6 @@ class TeamController extends Controller
 
     public function update(Request $request, Team $team) {
         $team->name = $request->name;
-        $team->school = $request->school;
         $team->save();
 
         return redirect()->route('teams.index');

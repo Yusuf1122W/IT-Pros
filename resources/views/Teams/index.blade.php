@@ -11,6 +11,7 @@
             <th>Name</th>
             <th>School</th>
             <th>Players</th>
+            <th>Actions</th>
 
         </thead>
 
@@ -20,7 +21,7 @@
                     <td>{{ $team->id }}</td>
                     <td><a href="{{ route('teams.index', ['teamId' => $team->id]) }}">{{ $team->name }}</a></td>
                     <td>{{$team->school}}</td>
-                    <td></td>
+                    <td>{{$team->players}}</td>
                     <td>
                         <a href="{{ route('teams.edit', $team->id) }}" class="button-edit">Edit</a>
                         <form action="{{ route('teams.destroy', $team->id) }}" method="post">

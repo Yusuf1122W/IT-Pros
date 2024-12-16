@@ -3,6 +3,7 @@
 use App\Http\Controllers\PlayerController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TournamentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,9 +29,16 @@ Route::get('/users/edit/{user}', [PlayerController::class, 'edit'])->name('users
 Route::post('/users/edit/{user}', [PlayerController::class, 'update'])->name('users.update');
 Route::delete('/users/delete/{user}', [PlayerController::class, 'destroy'])->name('users.destroy');
 
+Route::get('/tournaments', [TournamentController::class, 'index'])->name('tournaments.index');
+Route::get('/tournaments/create', [TournamentController::class, 'create'])->name('tournaments.create');
+Route::post('/tournaments/store', [TournamentController::class, 'store'])->name('tournaments.store');
+Route::get('/tournaments/edit/{user}', [TournamentController::class, 'edit'])->name('tournaments.edit');
+Route::post('/tournaments/edit/{user}', [TournamentController::class, 'update'])->name('tournaments.update');
+Route::delete('/tournaments/delete/{user}', [TournamentController::class, 'destroy'])->name('tournaments.destroy');
+
 Route::get('/teams', [TeamController::class, 'index'])->name('teams.index');
 Route::get('/teams/create', [TeamController::class, 'create'])->name('teams.create');
-Route::post('/teams/create', [TeamController::class, 'store'])->name('teams.store');
+Route::post('/teams/store', [TeamController::class, 'store'])->name('teams.store');
 Route::get('/teams/edit/{team}', [TeamController::class, 'edit'])->name('teams.edit');
 Route::post('/teams/edit/{team}', [TeamController::class, 'update'])->name('teams.update');
 Route::delete('/teams/delete/{team}', [TeamController::class, 'destroy'])->name('teams.destroy');

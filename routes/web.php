@@ -31,7 +31,7 @@ Route::delete('/users/delete/{user}', [PlayerController::class, 'destroy'])->nam
 
 Route::get('/tournaments', [TournamentController::class, 'index'])->name('tournaments.index');
 Route::get('/tournaments/create', [TournamentController::class, 'create'])->name('tournaments.create');
-Route::post('/tournaments/store', [TournamentController::class, 'store'])->name('tournaments.store');
+Route::post('/tournaments/create', [TournamentController::class, 'create'])->name('tournaments.store');
 Route::get('/tournaments/edit/{user}', [TournamentController::class, 'edit'])->name('tournaments.edit');
 Route::post('/tournaments/edit/{user}', [TournamentController::class, 'update'])->name('tournaments.update');
 Route::delete('/tournaments/delete/{user}', [TournamentController::class, 'destroy'])->name('tournaments.destroy');

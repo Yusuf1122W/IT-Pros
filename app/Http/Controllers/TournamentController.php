@@ -2,44 +2,48 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Tournament;
+use Illuminate\Http\Request;
 
 class TournamentController extends Controller
 {
+    public function index() {
+        // Fetch all teams
+        $tournaments = Tournament::all();
 
-
-    // Methode voor het weergeven van alle toernooien
-    public function index()
-    {
-        $tournaments = Tournament::all(); // Haal alle toernooien op uit de database
-        return view('tournaments.index', compact('tournaments')); // Geef ze door aan de view
+        // Pass teams to the view
+        return view('tournaments.index', ['tournaments' => $tournaments]);
     }
 
-    // Methode voor het weergeven van een formulier om een nieuw toernooi aan te maken
-    public function create()
-    {
-        return view('tournaments.create'); // Toon de 'create'-view
+    public function create() {
+        return view('tournaments.create');
     }
 
-    // Methode voor het opslaan van een nieuw toernooi
-    public function store(Request $request)
-    {
-        // Valideer de gegevens
-        $validatedData = $request->validate([
-            'title' => 'required|string|max:255',
-            'max_teams' => 'required|integer|min:2',
-            'started' => 'nullable|date',
-        ]);
-
-        // Maak een nieuw toernooi aan
-        $newTournament = new Tournament();
-        $newTournament->title = $validatedData['title'];
-        $newTournament->max_teams = $validatedData['max_teams'];
-        $newTournament->started = $validatedData['started'];
+    public function store(Request $request) {
+        $newTournament = new Tournament;
+        $newTournament->title = $request->title;
+        $newTournament->max_teams = $request->max_teams;
+        $newTournament->started = $request->started;
         $newTournament->save();
 
-        // Redirect naar de lijst met toernooien
-        return redirect()->route('tournaments.index')->with('success', 'Tournament created successfully!');
+        return redirect()->route('tournaments.index');
+    }
+
+    public function edit(Tournament $tournament) {
+        return view('tournaments.edit', ['tournaments' => $tournament]);
+    }
+
+    public function update(Request $request, Tournament $tournament) {
+        $tournament->title = $request->title;
+        $tournament->max_teams = $request->max_teams;
+        $tournament->started = $request->started;
+        $tournament->save();
+
+        return redirect()->route('tournaments.index');
+    }
+
+    public function destroy(Tournament $tournament) {
+        $tournament->delete();
+        return redirect()->route('tournament.index');
     }
 }

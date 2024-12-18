@@ -37,6 +37,8 @@ class TeamController extends Controller
 
     public function update(Request $request, Team $team) {
         $team->name = $request->name;
+        $team->school = $request->school;
+        $team->players = $request->players;
         $team->save();
 
         return redirect()->route('teams.index');

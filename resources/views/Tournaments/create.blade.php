@@ -1,13 +1,19 @@
-<form action="{{ route('tournaments.create') }}" method="POST">
-    @csrf
-    <label for="">Naam Toernooi: </label>
-    <input type="text" name="tournament"><br>
+<x-layouts.app title="Edit tournament">
 
-    <label for="">Maximale teams: </label>
-    <input type="number" name="max-teams"><br>
+    <div class="form-time">
+        <form action="{{ route('tournaments.create') }}" method="POST">
+            @csrf
+            <label for="">Naam Toernooi: </label>
+            <input type="text" name="tournament"><br>
 
-    <label for="">Gestart: </label>
-    <input type="date" name="started"><br>
+            <label for="">Maximale teams: </label>
+            <input type="number" name="max-teams"><br>
 
-    <input type="submit" value="Opslaan">
-</form>
+            <label for="">Gestart: </label>
+            <input type="date" name="started"><br>
+
+            <input type="submit" value="Opslaan">
+        </form>
+
+    </div>
+</x-layouts.app>

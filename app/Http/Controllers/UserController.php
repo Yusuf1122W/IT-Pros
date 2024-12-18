@@ -25,7 +25,6 @@ class TeamController extends Controller
         $newUser->role = $request->role;
         $newUser->email = $request->email;
         $newUser->email_verified_at = $request->email_verified_at;
-        $newUser->school = $request->school;
         $newUser->password = $request->password;
         $newUser->save();
 
@@ -41,7 +40,6 @@ class TeamController extends Controller
         $user->role = $request->role;
         $user->email = $request->email;
         $user->email_verified_at = $request->email_verified_at;
-        $user->school = $request->school;
         $user->password = $request->password;
         $user->save();
 

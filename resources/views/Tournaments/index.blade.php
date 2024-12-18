@@ -1,7 +1,7 @@
 <x-layouts.app>
 
     <div class="CL">
-        <a href="{{ route('tournaments.create') }}">Add team</a>
+        <a href="{{ route('tournaments.create') }}">Add tournament</a>
     </div>
 
     <div class="TC">
